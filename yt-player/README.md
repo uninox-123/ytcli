@@ -31,7 +31,17 @@ sudo apt-get update
 sudo apt-get install -y mpv ffmpeg nodejs
 ```
 
-### 2. Compile the Project
+### Quick Install (Binary Release)
+Install pre-compiled binaries directly from GitHub Releases:
+```bash
+curl -fsSL https://raw.githubusercontent.com/uninox-123/ytcli/main/scripts/install.sh | bash
+```
+Or specify a custom install directory or version:
+```bash
+VERSION=v1.0.0 BINDIR=$HOME/.local/bin curl -fsSL https://raw.githubusercontent.com/uninox-123/ytcli/main/scripts/install.sh | bash
+```
+
+### 2. Compile from Source
 Clone or navigate to the directory and run:
 ```bash
 go build -o ytplayer main.go
